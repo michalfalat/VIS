@@ -1,0 +1,11 @@
+C:\Users\Asus\Documents\Skola\VSB\VIS\fal0045\IS\DP_DAIS\Dopravio_Web\bin\Dopravio_Web.dll.config
+C:\Users\Asus\Documents\Skola\VSB\VIS\fal0045\IS\DP_DAIS\Dopravio_Web\bin\Dopravio_Web.dll
+C:\Users\Asus\Documents\Skola\VSB\VIS\fal0045\IS\DP_DAIS\Dopravio_Web\bin\Dopravio_Web.pdb
+C:\Users\Asus\Documents\Skola\VSB\VIS\fal0045\IS\DP_DAIS\Dopravio_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Asus\Documents\Skola\VSB\VIS\fal0045\IS\DP_DAIS\Dopravio_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Asus\Documents\Skola\VSB\VIS\fal0045\IS\DP_DAIS\Dopravio_Web\obj\Debug\Dopravio_Web.csprojResolveAssemblyReference.cache
+C:\Users\Asus\Documents\Skola\VSB\VIS\fal0045\IS\DP_DAIS\Dopravio_Web\obj\Debug\Dopravio_Web.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\Skola\VSB\VIS\fal0045\IS\DP_DAIS\Dopravio_Web\obj\Debug\Dopravio_Web.dll
+C:\Users\Asus\Documents\Skola\VSB\VIS\fal0045\IS\DP_DAIS\Dopravio_Web\obj\Debug\Dopravio_Web.pdb
+C:\Users\Asus\Documents\Skola\VSB\VIS\fal0045\IS\DP_DAIS\Dopravio_Web\bin\Newtonsoft.Json.dll
+C:\Users\Asus\Documents\Skola\VSB\VIS\fal0045\IS\DP_DAIS\Dopravio_Web\bin\Newtonsoft.Json.xml

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FAL0045ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="driver">
+      <EntityTypeMapping TypeName="FAL0045Model.driver">
+        <MappingFragment StoreEntitySet="driver">
+          <ScalarProperty Name="id_driver" ColumnName="id_driver" />
+          <ScalarProperty Name="years_drived" ColumnName="years_drived" />
+          <ScalarProperty Name="accident_count" ColumnName="accident_count" />
+          <ScalarProperty Name="id_employee" ColumnName="id_employee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="employee">
+      <EntityTypeMapping TypeName="FAL0045Model.employee">
+        <MappingFragment StoreEntitySet="employee">
+          <ScalarProperty Name="id_employee" ColumnName="id_employee" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="date_of_birth" ColumnName="date_of_birth" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="salary" ColumnName="salary" />
+          <ScalarProperty Name="id_serviceman" ColumnName="id_serviceman" />
+          <ScalarProperty Name="id_driver" ColumnName="id_driver" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OpStatistics">
+      <EntityTypeMapping TypeName="FAL0045Model.OpStatistics">
+        <MappingFragment StoreEntitySet="OpStatistics">
+          <ScalarProperty Name="operation" ColumnName="operation" />
+          <ScalarProperty Name="count" ColumnName="count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="repairs">
+      <EntityTypeMapping TypeName="FAL0045Model.repairs">
+        <MappingFragment StoreEntitySet="repairs">
+          <ScalarProperty Name="id_repair" ColumnName="id_repair" />
+          <ScalarProperty Name="fault" ColumnName="fault" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="date_end" ColumnName="date_end" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="id_serviceman" ColumnName="id_serviceman" />
+          <ScalarProperty Name="id_vehicle" ColumnName="id_vehicle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="route">
+      <EntityTypeMapping TypeName="FAL0045Model.route">
+        <MappingFragment StoreEntitySet="route">
+          <ScalarProperty Name="id_route" ColumnName="id_route" />
+          <ScalarProperty Name="start" ColumnName="start" />
+          <ScalarProperty Name="finish" ColumnName="finish" />
+          <ScalarProperty Name="stops_count" ColumnName="stops_count" />
+          <ScalarProperty Name="distance" ColumnName="distance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="salary_changes">
+      <EntityTypeMapping TypeName="FAL0045Model.salary_changes">
+        <MappingFragment StoreEntitySet="salary_changes">
+          <ScalarProperty Name="id_change" ColumnName="id_change" />
+          <ScalarProperty Name="old_salary" ColumnName="old_salary" />
+          <ScalarProperty Name="new_salary" ColumnName="new_salary" />
+          <ScalarProperty Name="date_change" ColumnName="date_change" />
+          <ScalarProperty Name="id_employee" ColumnName="id_employee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="serviceman">
+      <EntityTypeMapping TypeName="FAL0045Model.serviceman">
+        <MappingFragment StoreEntitySet="serviceman">
+          <ScalarProperty Name="id_serviceman" ColumnName="id_serviceman" />
+          <ScalarProperty Name="qualification" ColumnName="qualification" />
+          <ScalarProperty Name="id_employee" ColumnName="id_employee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="timetable">
+      <EntityTypeMapping TypeName="FAL0045Model.timetable">
+        <MappingFragment StoreEntitySet="timetable">
+          <ScalarProperty Name="id_journey" ColumnName="id_journey" />
+          <ScalarProperty Name="link_name" ColumnName="link_name" />
+          <ScalarProperty Name="departure" ColumnName="departure" />
+          <ScalarProperty Name="arrival" ColumnName="arrival" />
+          <ScalarProperty Name="id_route" ColumnName="id_route" />
+          <ScalarProperty Name="id_vehicle" ColumnName="id_vehicle" />
+          <ScalarProperty Name="id_driver" ColumnName="id_driver" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vehicle">
+      <EntityTypeMapping TypeName="FAL0045Model.vehicle">
+        <MappingFragment StoreEntitySet="vehicle">
+          <ScalarProperty Name="id_vehicle" ColumnName="id_vehicle" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="year_of_manufacture" ColumnName="year_of_manufacture" />
+          <ScalarProperty Name="capacity" ColumnName="capacity" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="consumption" ColumnName="consumption" />
+          <ScalarProperty Name="cost_price" ColumnName="cost_price" />
+          <ScalarProperty Name="wheelchair_accessible" ColumnName="wheelchair_accessible" />
+          <ScalarProperty Name="id_category" ColumnName="id_category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vehicle_category">
+      <EntityTypeMapping TypeName="FAL0045Model.vehicle_category">
+        <MappingFragment StoreEntitySet="vehicle_category">
+          <ScalarProperty Name="id_category" ColumnName="id_category" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="fuel" ColumnName="fuel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

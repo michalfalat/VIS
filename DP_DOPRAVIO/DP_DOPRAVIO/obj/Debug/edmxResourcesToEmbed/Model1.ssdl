@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FAL0045Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="driver">
+    <Key>
+      <PropertyRef Name="id_driver" />
+    </Key>
+    <Property Name="id_driver" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="years_drived" Type="int" Nullable="false" />
+    <Property Name="accident_count" Type="int" />
+    <Property Name="id_employee" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="employee">
+    <Key>
+      <PropertyRef Name="id_employee" />
+    </Key>
+    <Property Name="id_employee" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="surname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="date_of_birth" Type="datetime" Nullable="false" />
+    <Property Name="phone_number" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" />
+    <Property Name="address" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="salary" Type="money" Nullable="false" />
+    <Property Name="id_serviceman" Type="int" />
+    <Property Name="id_driver" Type="int" />
+  </EntityType>
+  <EntityType Name="OpStatistics">
+    <Key>
+      <PropertyRef Name="operation" />
+    </Key>
+    <Property Name="operation" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="count" Type="int" />
+  </EntityType>
+  <EntityType Name="repairs">
+    <Key>
+      <PropertyRef Name="id_repair" />
+    </Key>
+    <Property Name="id_repair" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fault" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="date" Type="datetime" Nullable="false" />
+    <Property Name="date_end" Type="datetime" />
+    <Property Name="cost" Type="money" Nullable="false" />
+    <Property Name="id_serviceman" Type="int" Nullable="false" />
+    <Property Name="id_vehicle" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="route">
+    <Key>
+      <PropertyRef Name="id_route" />
+    </Key>
+    <Property Name="id_route" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="start" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="finish" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="stops_count" Type="int" Nullable="false" />
+    <Property Name="distance" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="salary_changes">
+    <Key>
+      <PropertyRef Name="id_change" />
+    </Key>
+    <Property Name="id_change" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="old_salary" Type="money" Nullable="false" />
+    <Property Name="new_salary" Type="money" Nullable="false" />
+    <Property Name="date_change" Type="datetime" />
+    <Property Name="id_employee" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="serviceman">
+    <Key>
+      <PropertyRef Name="id_serviceman" />
+    </Key>
+    <Property Name="id_serviceman" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="qualification" Type="nvarchar" MaxLength="50" />
+    <Property Name="id_employee" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="timetable">
+    <Key>
+      <PropertyRef Name="id_journey" />
+    </Key>
+    <Property Name="id_journey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="link_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="departure" Type="datetime" Nullable="false" />
+    <Property Name="arrival" Type="datetime" Nullable="false" />
+    <Property Name="id_route" Type="int" Nullable="false" />
+    <Property Name="id_vehicle" Type="int" Nullable="false" />
+    <Property Name="id_driver" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vehicle">
+    <Key>
+      <PropertyRef Name="id_vehicle" />
+    </Key>
+    <Property Name="id_vehicle" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="year_of_manufacture" Type="int" Nullable="false" />
+    <Property Name="capacity" Type="int" Nullable="false" />
+    <Property Name="status" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="consumption" Type="float" Nullable="false" />
+    <Property Name="cost_price" Type="money" Nullable="false" />
+    <Property Name="wheelchair_accessible" Type="bit" Nullable="false" />
+    <Property Name="id_category" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vehicle_category">
+    <Key>
+      <PropertyRef Name="id_category" />
+    </Key>
+    <Property Name="id_category" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="fuel" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="Employee_Driver_FK">
+    <End Role="driver" Type="Self.driver" Multiplicity="0..1" />
+    <End Role="employee" Type="Self.employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="driver">
+        <PropertyRef Name="id_driver" />
+      </Principal>
+      <Dependent Role="employee">
+        <PropertyRef Name="id_driver" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Employee_serviceman_FK">
+    <End Role="serviceman" Type="Self.serviceman" Multiplicity="0..1" />
+    <End Role="employee" Type="Self.employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="serviceman">
+        <PropertyRef Name="id_serviceman" />
+      </Principal>
+      <Dependent Role="employee">
+        <PropertyRef Name="id_serviceman" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relation_1">
+    <End Role="vehicle_category" Type="Self.vehicle_category" Multiplicity="1" />
+    <End Role="vehicle" Type="Self.vehicle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vehicle_category">
+        <PropertyRef Name="id_category" />
+      </Principal>
+      <Dependent Role="vehicle">
+        <PropertyRef Name="id_category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relation_10">
+    <End Role="employee" Type="Self.employee" Multiplicity="1" />
+    <End Role="driver" Type="Self.driver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employee">
+        <PropertyRef Name="id_employee" />
+      </Principal>
+      <Dependent Role="driver">
+        <PropertyRef Name="id_employee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relation_14">
+    <End Role="route" Type="Self.route" Multiplicity="1" />
+    <End Role="timetable" Type="Self.timetable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="route">
+        <PropertyRef Name="id_route" />
+      </Principal>
+      <Dependent Role="timetable">
+        <PropertyRef Name="id_route" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relation_15">
+    <End Role="vehicle" Type="Self.vehicle" Multiplicity="1" />
+    <End Role="timetable" Type="Self.timetable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vehicle">
+        <PropertyRef Name="id_vehicle" />
+      </Principal>
+      <Dependent Role="timetable">
+        <PropertyRef Name="id_vehicle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relation_16">
+    <End Role="driver" Type="Self.driver" Multiplicity="1" />
+    <End Role="timetable" Type="Self.timetable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="driver">
+        <PropertyRef Name="id_driver" />
+      </Principal>
+      <Dependent Role="timetable">
+        <PropertyRef Name="id_driver" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relation_17">
+    <End Role="serviceman" Type="Self.serviceman" Multiplicity="1" />
+    <End Role="repairs" Type="Self.repairs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="serviceman">
+        <PropertyRef Name="id_serviceman" />
+      </Principal>
+      <Dependent Role="repairs">
+        <PropertyRef Name="id_serviceman" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relation_18">
+    <End Role="vehicle" Type="Self.vehicle" Multiplicity="1" />
+    <End Role="repairs" Type="Self.repairs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vehicle">
+        <PropertyRef Name="id_vehicle" />
+      </Principal>
+      <Dependent Role="repairs">
+        <PropertyRef Name="id_vehicle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relation_9">
+    <End Role="employee" Type="Self.employee" Multiplicity="1" />
+    <End Role="serviceman" Type="Self.serviceman" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employee">
+        <PropertyRef Name="id_employee" />
+      </Principal>
+      <Dependent Role="serviceman">
+        <PropertyRef Name="id_employee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="salary_changes_employee_FK">
+    <End Role="employee" Type="Self.employee" Multiplicity="1" />
+    <End Role="salary_changes" Type="Self.salary_changes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employee">
+        <PropertyRef Name="id_employee" />
+      </Principal>
+      <Dependent Role="salary_changes">
+        <PropertyRef Name="id_employee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FAL0045ModelStoreContainer">
+    <EntitySet Name="driver" EntityType="Self.driver" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="employee" EntityType="Self.employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OpStatistics" EntityType="Self.OpStatistics" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="repairs" EntityType="Self.repairs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="route" EntityType="Self.route" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="salary_changes" EntityType="Self.salary_changes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="serviceman" EntityType="Self.serviceman" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="timetable" EntityType="Self.timetable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vehicle" EntityType="Self.vehicle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vehicle_category" EntityType="Self.vehicle_category" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="Employee_Driver_FK" Association="Self.Employee_Driver_FK">
+      <End Role="driver" EntitySet="driver" />
+      <End Role="employee" EntitySet="employee" />
+    </AssociationSet>
+    <AssociationSet Name="Employee_serviceman_FK" Association="Self.Employee_serviceman_FK">
+      <End Role="serviceman" EntitySet="serviceman" />
+      <End Role="employee" EntitySet="employee" />
+    </AssociationSet>
+    <AssociationSet Name="Relation_1" Association="Self.Relation_1">
+      <End Role="vehicle_category" EntitySet="vehicle_category" />
+      <End Role="vehicle" EntitySet="vehicle" />
+    </AssociationSet>
+    <AssociationSet Name="Relation_10" Association="Self.Relation_10">
+      <End Role="employee" EntitySet="employee" />
+      <End Role="driver" EntitySet="driver" />
+    </AssociationSet>
+    <AssociationSet Name="Relation_14" Association="Self.Relation_14">
+      <End Role="route" EntitySet="route" />
+      <End Role="timetable" EntitySet="timetable" />
+    </AssociationSet>
+    <AssociationSet Name="Relation_15" Association="Self.Relation_15">
+      <End Role="vehicle" EntitySet="vehicle" />
+      <End Role="timetable" EntitySet="timetable" />
+    </AssociationSet>
+    <AssociationSet Name="Relation_16" Association="Self.Relation_16">
+      <End Role="driver" EntitySet="driver" />
+      <End Role="timetable" EntitySet="timetable" />
+    </AssociationSet>
+    <AssociationSet Name="Relation_17" Association="Self.Relation_17">
+      <End Role="serviceman" EntitySet="serviceman" />
+      <End Role="repairs" EntitySet="repairs" />
+    </AssociationSet>
+    <AssociationSet Name="Relation_18" Association="Self.Relation_18">
+      <End Role="vehicle" EntitySet="vehicle" />
+      <End Role="repairs" EntitySet="repairs" />
+    </AssociationSet>
+    <AssociationSet Name="Relation_9" Association="Self.Relation_9">
+      <End Role="employee" EntitySet="employee" />
+      <End Role="serviceman" EntitySet="serviceman" />
+    </AssociationSet>
+    <AssociationSet Name="salary_changes_employee_FK" Association="Self.salary_changes_employee_FK">
+      <End Role="employee" EntitySet="employee" />
+      <End Role="salary_changes" EntitySet="salary_changes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,31 @@
+C:\Users\Asus\Documents\DAIS\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.Form1.resources
+C:\Users\Asus\Documents\DAIS\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.FormDriverEdit.resources
+C:\Users\Asus\Documents\DAIS\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.FormVehicleEdit.resources
+C:\Users\Asus\Documents\DAIS\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.Properties.Resources.resources
+C:\Users\Asus\Documents\DAIS\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.csproj.GenerateResource.Cache
+C:\Users\Asus\Documents\DAIS\project\DP_DAIS\DP_DAIS\bin\Debug\DP_DAIS.exe.config
+C:\Users\Asus\Documents\DAIS\project\DP_DAIS\DP_DAIS\bin\Debug\DP_DAIS.exe
+C:\Users\Asus\Documents\DAIS\project\DP_DAIS\DP_DAIS\bin\Debug\DP_DAIS.pdb
+C:\Users\Asus\Documents\DAIS\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.exe
+C:\Users\Asus\Documents\DAIS\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.pdb
+C:\Users\Asus\Documents\DAIS\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.csprojResolveAssemblyReference.cache
+C:\Users\Asus\Documents\DAIS\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.FormServicemanEdit.resources
+C:\Users\Asus\Documents\DAIS\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.FormAddCategory.resources
+C:\Users\Asus\Documents\DAIS\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.FormAddVehicle.resources
+C:\Users\Asus\Documents\DAIS\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.FormAddJourney.resources
+C:\Users\Asus\Documents\Skola\VSB\DAIS\DAIS subory\project\DP_DAIS\DP_DAIS\bin\Debug\DP_DAIS.exe.config
+C:\Users\Asus\Documents\Skola\VSB\DAIS\DAIS subory\project\DP_DAIS\DP_DAIS\bin\Debug\DP_DAIS.exe
+C:\Users\Asus\Documents\Skola\VSB\DAIS\DAIS subory\project\DP_DAIS\DP_DAIS\bin\Debug\DP_DAIS.pdb
+C:\Users\Asus\Documents\Skola\VSB\DAIS\DAIS subory\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.csprojResolveAssemblyReference.cache
+C:\Users\Asus\Documents\Skola\VSB\DAIS\DAIS subory\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.Form1.resources
+C:\Users\Asus\Documents\Skola\VSB\DAIS\DAIS subory\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.FormAddCategory.resources
+C:\Users\Asus\Documents\Skola\VSB\DAIS\DAIS subory\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.FormAddJourney.resources
+C:\Users\Asus\Documents\Skola\VSB\DAIS\DAIS subory\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.FormAddVehicle.resources
+C:\Users\Asus\Documents\Skola\VSB\DAIS\DAIS subory\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.FormDriverEdit.resources
+C:\Users\Asus\Documents\Skola\VSB\DAIS\DAIS subory\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.FormServicemanEdit.resources
+C:\Users\Asus\Documents\Skola\VSB\DAIS\DAIS subory\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.FormVehicleEdit.resources
+C:\Users\Asus\Documents\Skola\VSB\DAIS\DAIS subory\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.Properties.Resources.resources
+C:\Users\Asus\Documents\Skola\VSB\DAIS\DAIS subory\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.csproj.GenerateResource.Cache
+C:\Users\Asus\Documents\Skola\VSB\DAIS\DAIS subory\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\Skola\VSB\DAIS\DAIS subory\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.exe
+C:\Users\Asus\Documents\Skola\VSB\DAIS\DAIS subory\project\DP_DAIS\DP_DAIS\obj\Debug\DP_DAIS.pdb

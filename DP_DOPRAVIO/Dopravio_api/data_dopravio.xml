@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Vehicles>
+  <Vehicle id="1" name="EK-014" year="1995" capacity="50" consumption="25" />
+  <Vehicle id="2" name="trolejak-001" year="1995" capacity="50" consumption="45" />
+  <Vehicle id="3" name="trolejak-004X" year="2016" capacity="50" consumption="25" />
+  <Vehicle id="4" name="solaris diesel" year="1995" capacity="44" consumption="45" />
+  <Vehicle id="5" name="EK-001" year="1990" capacity="65" consumption="20" />
+  <Vehicle id="6" name="trolejak-001" year="1999" capacity="52" consumption="29" />
+  <Vehicle id="7" name="EK-02" year="1971" capacity="40" consumption="30" />
+  <Vehicle id="8" name="karosa diesel" year="1975" capacity="45" consumption="60" />
+  <Vehicle id="9" name="EK-014" year="1989" capacity="50" consumption="34" />
+  <Vehicle id="10" name="mikro express" year="2016" capacity="9" consumption="10" />
+  <Vehicle id="11" name="evo 1 " year="2011" capacity="55" consumption="19" />
+  <Vehicle id="12" name="evo 1" year="2010" capacity="55" consumption="20" />
+  <Vehicle id="13" name="solaris eco" year="1995" capacity="50" consumption="18" />
+  <Vehicle id="14" name="solaris eco" year="1994" capacity="50" consumption="20" />
+  <Vehicle id="15" name="solaris eco" year="1991" capacity="45" consumption="15" />
+  <Vehicle id="16" name="karosa 22" year="1981" capacity="45" consumption="17" />
+  <Vehicle id="17" name="BusBus 22" year="1971" capacity="45" consumption="25" />
+</Vehicles>
